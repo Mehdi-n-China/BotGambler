@@ -295,7 +295,7 @@ def Bets(game_id):
     global bets
     ck = time.time()
     Bet_Player = f"""<command channel="table-bcpirpmfpobc1910"> <lpbet gm="baccarat_desktop" gId="{game_id}" uId="ppc1735006715548" ck="{ck}"><bet amt="{bet_amt}" bc="22" ck="{ck}"/></lpbet></command>"""
-    Bet_Banker = f"""<command channel="table-bcpirpmfpobc1910"> <lpbet gm="baccarat_desktop" gId="{game_id}" uId="ppc1735006715548" ck="{ck}"><bet amt="{bet_amt}" bc="24" ck="{ck}"/></lpbet></command>"""
+    Bet_Banker = f'''<command channel="table-bcpirpmfpobc1910"> <lpbet gm="baccarat_desktop" gId="{game_id}" uId="ppc1735006715548" ck="{ck}"><bet amt="{bet_amt}" bc="24" ck="{ck}"/></lpbet></command>'''
     bets = {
         "Player": Bet_Player,
         "Banker": Bet_Banker,
@@ -350,7 +350,7 @@ async def listen_for_messages():
                             global_timer_start = time.time()
                             await send_request(websocket, bets["Banker"])
                             print(f"Bet Out for Banker ({bet_amt})")
-                            if bet_amt >= 100:
+                            if bet_amt > 0:
                                 ev += (bet_amt*(Edge_Banker-100))/100
                     if r'<endshuffling game=' in message:
                         game_in_shoe = 1
