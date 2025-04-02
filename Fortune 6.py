@@ -241,7 +241,6 @@ def get_new_seed():
     url = "https://roobet.com/_api/pragmatic/internal/getGameConfig"
 
     params = {
-        "gameName": "evolution:EasyBlackjack",
         "isMobile": "false",
         "currency": "USD",
         "lang": "en",
