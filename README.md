@@ -5,3 +5,7 @@ Features
 Super 8 Bot: Automates gameplay for Pragmatic Play Super 8.
 Fortune 6 Baccarat Bot: Automates gameplay for Fortune 6 Baccarat.
 Cookie Management: Utilizes a Roobet SID stored in a config file to manage session cookies for persistent logins.
+
+Please make sure to double check your bet amount before running thism as this will actually bet money from your account.
+
+Good Luck!!!
