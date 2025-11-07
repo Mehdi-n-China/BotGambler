@@ -9,3 +9,5 @@ Cookie Management: Utilizes a Roobet SID stored in a config file to manage sessi
 Please make sure to double check your bet amount before running this as this will actually bet money from your account.
 
 Good Luck!!!
+
+#### Update: I made this code when I was 14 so please dont be too harsh on it, its just a repository that I didn't have the heart to delete
