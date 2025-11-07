@@ -247,7 +247,7 @@ async def listen_for_messages():
                             ping()
                             await send_request(websocket, Ping)
                     if r'<betopen game=' in message:
-                        print("\nStanby For Transacrion")
+                        print("\nStanby For Transaction")
                     if r'<betsclosingsoon game=' in message:
                         print(f"\nRound : {game_in_shoe} EV Generated : {ev:.2f}")
                         game_id = re.search(r'game="([^"]+)"', message)
